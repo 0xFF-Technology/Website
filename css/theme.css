@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: 'HexaFont';
+    src: url('/fonts/HexaFont_Regular.woff2') format('woff2'),
+        url('/fonts/HexaFont_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.about::-webkit-scrollbar-track{
+    background: #000;
+}
+
+:root {
+    --text-color: white;
+    --metallic-glass-bg: 
+    radial-gradient(ellipse 100% 37% at top, transparent, white 100%, transparent 100%),
+    radial-gradient(ellipse 100% 37% at bottom, white, transparent),
+    linear-gradient(to bottom, #091F1E, #081412);
+
+}
+
+html {
+    font-family: "IBM Plex Serif";
+    font-size: 1.5r em;
+    height: 100vh; 
+    background: linear-gradient(to bottom, #020F0E, #0F1110);
+    background-attachment: fixed;
+    color: var(--text-color);
+}
+
+body {
+    margin: 0;
+    padding: 1vw;
+}
+
+.logo { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    gap: 10px;
+    height: 100px;
+    width: 200px;
+}
+
+h1 {
+    font-family: "HexaFont";
+    font-size: 5vh;
+}
+
+header {
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    display: flex;
+    background: var(--metallic-glass-bg);
+    background-blend-mode: overlay;
+    box-shadow: inset 0 0.75vh 4px #ffffff3a;
+    clip-path: polygon(2.5% 0%, 97.5% 0%, 100% 50%, 97.5% 100%, 2.5% 100%, 0% 50%);
+    padding: 1% 2%;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 2vw;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.4em;
+    font-family: "Orbitron";
+}   
+
+.subtitle {
+    font-family: "HexaFont";
+    font-size: 2.5rem;
+}
+
+.text {
+    font-size: 2rem;
+    word-spacing: 20%;
+    line-height: 150%;
+    display: block;
+    height: 50vh;
+}
+
+.about-title {
+    align-items: center;
+    justify-content: center;
+    background: var(--metallic-glass-bg);
+    background-blend-mode: overlay;
+    padding: 1% 2%;
+}
+
+.about {
+    background: var(--metallic-glass-bg);
+    background-blend-mode: overlay;
+    padding: 2% 5%;
+    overflow-y: auto;
+}
