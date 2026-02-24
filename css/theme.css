@@ -3,8 +3,8 @@
 
 @font-face {
     font-family: 'HexaFont';
-    src: url('/fonts/HexaFont_Regular.woff2') format('woff2'),
-        url('/fonts/HexaFont_Regular.woff') format('woff');
+    src: url('../fonts/HexaFont_Regular.woff2') format('woff2'),
+        url('../fonts/HexaFont_Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
